@@ -1,0 +1,58 @@
+div.chartRankingItemRow {
+    @extend .row;
+    height: 80px;
+    border-collapse: collapse;
+    border-top: 1px solid #D3E0E9;
+    border-left: 1px solid #D3E0E9;
+    border-right: 1px solid #D3E0E9;
+}
+
+div.chartRankingItemRow:nth-last-of-type(1) {
+    border-bottom: 1px solid #D3E0E9;
+}
+
+div.rankingBox {
+    height: 100%;
+    @extend .col-xs-1;
+    font-family: 'arial black', 'Hiragino Kaku Gothic Std', 'cursive';
+    font-size: 30px;
+    font-weight: bold;
+    @extend .text-center;
+    line-height: 80px;
+}
+
+div.chartRankingItemBox {
+    height: 100%;
+    @extend .col-xs-11;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+div.chartMusicBox {
+    height: 50%;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div.chartArtistBox {
+    height: 50%;
+    position: relative;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+div.chartMusicText {
+    position: absolute;
+    bottom: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.chartArtistText {
+    position: absolute;
+    top: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+}

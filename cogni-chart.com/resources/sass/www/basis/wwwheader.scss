@@ -1,0 +1,30 @@
+.chartheader {
+    background-color: #001133;
+}
+
+.logobox {
+    a {
+        height: 100%;
+        img {
+            height: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width : 768px) and (min-height: 415px) {
+    .logobox {
+        height: 2rem;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .logobox {
+        height: 2rem;
+    }
+}
+
+@media only screen and (max-height : 414px) {
+    .logobox {
+        height: 1.8rem;
+    }
+}

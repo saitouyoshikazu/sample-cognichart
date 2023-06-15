@@ -1,0 +1,45 @@
+$footerbg: #001133;
+nav.wwwfooter {
+}
+
+.footer-upper-row {
+    background-color: $footerbg;
+    a {
+        color: #F5F5F5;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.footer-lower-row {
+    height: 23px;
+    background-color: lighten($footerbg, 5%);
+    .brand {
+        color: #949494;
+        font-family: 'Helvetica', sans-serif;
+    }
+}
+
+@media only screen and (min-width : 768px) and (min-height: 415px) {
+    .footer-upper-row {
+        height: 55px;
+        -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .footer-upper-row {
+        height: 124px;
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+    }
+}
+
+@media only screen and (max-height : 414px) {
+    .footer-upper-row {
+        height: 55px;
+        -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    }
+}

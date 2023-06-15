@@ -1,0 +1,101 @@
+.ad-row {
+    border-left: none;
+    border-right: none;
+    @extend .justify-content-around;
+    @extend .pt-3;
+    @extend .pb-3;
+    background-color: #000000;
+}
+
+.ad-row:last-of-type {
+    border-bottom: none;
+}
+
+.ad-box {
+    position: relative;
+    height: 60px;
+    max-width: 468px;
+    @extend .w-100;
+    img {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        -webkit-transform: translateY(-50%) translateX(-50%);
+    }
+}
+
+.gadBox {
+    position: relative;
+    height: 120px;
+    @extend .w-100;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.gadBox2 {
+    position: relative;
+    height: 300px;
+    @extend .w-100;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.gad {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+.gad2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+@media only screen and (min-width : 768px) and (min-height: 415px) {
+    .gad {
+        width: 728px;
+        height: 90px !important;
+    }
+    .gadBox2 {
+        height: 300px;
+    }
+    .gad2 {
+        width: 728px;
+        height: 280px !important;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .gad {
+        width: 320px;
+        height: 100px !important;
+    }
+    .gadBox2 {
+        height: 120px;
+    }
+    .gad2 {
+        width: 320px;
+        height: 100px !important;
+    }
+}
+
+@media only screen and (max-height : 414px) {
+    .gad {
+        width: 468px;
+        height: 60px !important;
+    }
+    .gadBox2 {
+        height: 300px;
+    }
+    .gad2 {
+        width: 468px;
+        height: 280px !important;
+    }
+}

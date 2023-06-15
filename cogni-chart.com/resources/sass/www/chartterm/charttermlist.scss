@@ -1,0 +1,72 @@
+.chartTermList {
+    font-family: 'arial black', 'Hiragino Kaku Gothic Std', 'cursive';
+}
+
+@media only screen and (min-width : 768px) and (min-height: 415px) {
+    .charttermlistpart {
+        width: 50%;
+        display: inline-block;
+        text-align: left;
+    }
+    .chartTermList {
+        height: 2rem;
+        button {
+            height: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            border-radius: 4px;
+            border-color: darken($exp-color-purple, 20%);
+            box-shadow: 1px 1px 1px 1px darken($exp-color-purple, 30%);
+            font-size: 1rem;
+            line-height: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .charttermlistpart {
+        width: 100%;
+    }
+    .chartTermList {
+        height: 2rem;
+        width: 100%;
+        button {
+            height: 100%;
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            border-radius: 0 0 4px 4px;
+            border-color: darken($exp-color-purple, 20%);
+            box-shadow: 1px 1px 1px 1px darken($exp-color-purple, 30%);
+            font-size: 1rem;
+            line-height: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-height : 414px) {
+    .charttermlistpart {
+        width: 50%;
+        display: inline-block;
+        text-align: left;
+    }
+    .chartTermList {
+        height: 1.8rem;
+        button {
+            height: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            border-radius: 4px;
+            border-color: darken($exp-color-purple, 20%);
+            box-shadow: 1px 1px 1px 1px darken($exp-color-purple, 30%);
+            font-size: 0.8rem;
+            line-height: 0.8rem;
+        }
+    }
+}

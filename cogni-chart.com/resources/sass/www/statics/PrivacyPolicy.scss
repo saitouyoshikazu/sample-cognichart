@@ -1,0 +1,35 @@
+.privacypolicy-wakeup-board-wrapper {
+    -webkit-perspective: 500px;
+    -moz-perspective: 500px;
+    -o-perspective: 500px;
+    perspective: 500px;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.privacypolicy-wakeup-board {
+    @extend .container-fluid;
+    overflow-y: auto;
+    padding-bottom: 2rem;
+}
+
+@media only screen and (min-width : 768px) and (min-height: 415px) {
+    .privacypolicy-wakeup-board {
+        height: calc(100vh - (6.7rem + 78px));
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .privacypolicy-wakeup-board {
+        height: calc(100vh - 8.7rem);
+    }
+}
+
+@media only screen and (max-height : 414px) {
+    .privacypolicy-wakeup-board {
+        height: calc(100vh - 6.1rem);
+    }
+}

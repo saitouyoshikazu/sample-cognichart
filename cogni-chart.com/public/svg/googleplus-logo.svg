@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg class="sns-logo-googleplus" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+            .googleplus-cls-1{fill:#DC4E41;}
+            .googleplus-cls-2{fill:#FFFFFF;}
+            .googleplus-cls-3{fill:#FFFFFF;}
+            .sns-logo-googleplus:hover .googleplus-cls-1{fill:#DC4E41;}
+            .sns-logo-googleplus:hover .googleplus-cls-2{fill:#CCCCCC;}
+            .sns-logo-googleplus:hover .googleplus-cls-3{fill:#CCCCCC;}
+        </style>
+  </defs>
+  <title>Googl_Plus_Logo</title>
+  <g id="Googl_Plus_Logo_Rect" data-name="Googl Plus Logo Rect">
+    <rect class="googleplus-cls-1" width="100" height="100"/>
+  </g>
+  <g id="Googl_Plus_Logo_Chars" data-name="Googl Plus Logo Chars">
+    <path class="googleplus-cls-2" d="M 37.179 46.804 L 37.179 54.426 L 49.757 54.426 C 49.25 57.698 45.955 64.016 37.179 64.016 C 29.606 64.016 23.428 57.729 23.428 49.98 C 23.428 42.231 29.606 35.944 37.179 35.944 C 41.488 35.944 44.371 37.786 46.019 39.374 L 52.039 33.561 C 48.173 29.942 43.166 27.75 37.179 27.75 C 24.917 27.75 15 37.69 15 49.98 C 15 62.27 24.917 72.21 37.179 72.21 C 49.979 72.21 58.47 63.191 58.47 50.489 C 58.47 49.027 58.312 47.916 58.122 46.804 L 37.179 46.804 L 37.179 46.804 Z"/>
+    <path class="googleplus-cls-3" d="M 84.99 46.833 L 78.66 46.833 L 78.66 40.5 L 72.33 40.5 L 72.33 46.833 L 66 46.833 L 66 53.167 L 72.33 53.167 L 72.33 59.5 L 78.66 59.5 L 78.66 53.167 L 84.99 53.167"/>
+  </g>
+</svg>

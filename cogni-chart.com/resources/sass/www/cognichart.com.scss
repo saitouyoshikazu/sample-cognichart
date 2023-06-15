@@ -1,0 +1,229 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import "wwwvariables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Font Awesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/v4-shims";
+
+// Swiper
+@import '~swiper/dist/css/swiper';
+
+$exp-color-lime: #22AA22;
+$exp-color-sky: #33AAFF;
+$exp-color-gray: #ECECEC;
+$exp-color-purple: #FF00FF;
+$exp-button-colors: (
+    "lime": $exp-color-lime,
+    "sky": $exp-color-sky,
+    "gray": $exp-color-gray,
+    "purple": $exp-color-purple,
+);
+@each $color, $value in $exp-button-colors {
+    .btn-#{$color} {
+        @include button-variant($value, $value);
+    }
+}
+@each $color, $value in $exp-button-colors {
+    .btn-outline-#{$color} {
+        @include button-outline-variant($value);
+    }
+}
+
+@mixin asset-bglg($bglgstring, $colorstring) {
+    background: linear-gradient(#{$bglgstring});
+    color: #{$colorstring};
+}
+$asset-arrays: (
+    "instagram": (
+        "bglg": "-135deg, #FCB045, #FD1D1D, #833AB4",
+        "color": "#E3E3FF"
+    ),
+    "atlas": (
+        "bglg": "-135deg, #FEAC5E, #C779D0, #4BC0C8",
+        "color": "#FFFFE3"
+    ),
+    "argon": (
+        "bglg": "-135deg, #FDEFF9, #EC38BC, #7303C0, #03001E",
+        "color": "#FFE3FF"
+    ),
+    "monte-carlo": (
+        "bglg": "-135deg, #CC95C0, #DBD4D4, #7AA1D2",
+        "color": "#FFFFE3"
+    ),
+    "hazel": (
+        "bglg": "-135deg, #E684AE, #79CBCA, #77A1D3",
+        "color": "#FFFFFF"
+    ),
+    "magic": (
+        "bglg": "-135deg, #5D26C1, #A17FE0, #59C173",
+        "color": "#FFFFFF"
+    ),
+    "sweet-period": (
+        "bglg": "-135deg, #F7C978, #F3A469, #F18271, #CC6B8E, #A86AA4, #8F6AAE, #7B5FAC, #5A55AE, #3F51B1",
+        "color": "#E3FFFF"
+    ),
+    "magic-lake":(
+        "bglg": "-135deg, #d5dee7, #ffafbd, #c9ffbf",
+        "color": "#E3FFFF"
+    ),
+    "combi": (
+        "bglg": "-135deg, #00416A, #799F0C, #FFE000",
+        "color": "#FFFFE3"
+    )
+);
+
+@each $asset-name, $asset-value in $asset-arrays {
+    .asset-#{$asset-name} {
+        @include asset-bglg(map-get($asset-value, 'bglg'), map-get($asset-value, 'color'));
+    }
+}
+
+.af-button {
+    @extend .btn;
+    height: 41px;
+    width: 140px;
+    position: relative;
+    img {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        z-index: 0;
+    }
+}
+
+.w-35 {
+    width: 35%;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.transform-x-center {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.transform-y-center {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.transform-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.word-wrap-break-word {
+    word-wrap: break-word;
+}
+
+.modal-header.modal-header-sizing {
+    max-height: 90px;
+    overflow-y: auto;
+}
+
+.modal-body.modal-body-sizing {
+    height: 398px;
+    overflow-y: auto;
+}
+
+input[type="file"].upload-field-hidden {
+    display: none;
+}
+
+.loading-spin {
+    animation: spin .7s infinite linear;
+    -ms-animation: spin .7s infinite linear;
+    -webkit-animation: spinw .7s infinite linear;
+    -moz-animation: spinm .7s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+  
+@-webkit-keyframes spinw {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spinm {
+    from { -moz-transform: rotate(0deg);}
+    to { -moz-transform: rotate(360deg);}
+}
+
+.flex-direction-control {
+}
+
+@media only screen and (min-width : 768px) and (min-height: 415px) {
+    .flex-direction-control {
+        -webkit-box-orient: horizontal !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+        flex-direction: row !important;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .flex-direction-control {
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+}
+
+@media only screen and (max-height : 414px) {
+    .flex-direction-control {
+        -webkit-box-orient: horizontal !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+        flex-direction: row !important;
+    }
+}
+
+@import "./basis/wwwheader.scss";
+@import "./basis/wwwarticle.scss";
+@import "./basis/wwwfooter.scss";
+@import "./sns/snslinks.scss";
+@import "./chart/appendall.scss";
+@import "./chart/chartlist.scss";
+@import "./chart/chartsource.scss";
+@import "./chartterm/charttermlist.scss";
+@import "./chart/charttitle.scss";
+@import "./chartrankingitem/chartrankingitem.scss";
+@import "./player/player.scss";
+@import "./WakeupBoard/WakeupBoard.scss";
+@import "./statics/statics.scss";
+@import "./statics/HowToUse.scss";
+@import "./statics/PrivacyPolicy.scss";
+@import "./statics/TermsOfUse.scss";
+@import "./statics/ContactUs.scss";
+@import "./statics/Maintenance.scss";
+@import "./ad/ad.scss";
+@import "./top/top.scss";

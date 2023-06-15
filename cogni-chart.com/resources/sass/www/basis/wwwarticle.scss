@@ -1,0 +1,31 @@
+article.wwwbody {
+    overflow: hidden;
+    background-color: #000000;
+}
+
+@media only screen and (min-width : 768px) and (min-height: 415px) {
+    article.wwwbody {
+        padding-top: 6.7rem;
+        &.player-on {
+            padding-top: 21.7rem;
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    article.wwwbody {
+        padding-top: 8.7rem;
+        &.player-on {
+            padding-top: 18.7rem;
+        }
+    }
+}
+
+@media only screen and (max-height : 414px) {
+    article.wwwbody {
+        padding-top: 6.1rem;
+        &.player-on {
+            padding-top: 14.1rem;
+        }
+    }
+}

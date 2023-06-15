@@ -1,0 +1,27 @@
+.appendall-btn {
+    box-shadow: 1px 1px 1px 1px darken($exp-color-lime, 30%);
+}
+
+@media only screen and (min-width : 768px) and (min-height: 415px) {
+    .appendall-btn {
+        height: 2rem;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .appendall-btn {
+        height: 2rem;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+}
+
+@media only screen and (max-height : 414px) {
+    .appendall-btn {
+        height: 1.8rem;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
+}

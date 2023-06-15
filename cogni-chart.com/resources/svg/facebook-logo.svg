@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg class="sns-logo-facebook" id="Layer_1" data-name="Layer 1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .facebook-cls-1{fill:#4267b2;}
+            .facebook-cls-2{fill:#fff;}
+            .sns-logo-facebook:hover .facebook-cls-1 {fill: #253A63;}
+            .sns-logo-facebook:hover .facebook-cls-2 {fill: #CCCCCC;}
+        </style>
+    </defs>
+    <path class="facebook-cls-1" d="M 100 0 C 99.978 0 0 0 0 0 L 0 100 L 53.42 100 L 53.42 61.33 L 40.42 61.33 L 40.42 46.19 L 53.42 46.19 L 53.42 35.05 C 53.42 22.14 61.31 15.1 72.83 15.1 C 76.718 15.083 80.604 15.284 84.47 15.7 L 84.47 29.2 L 76.53 29.2 C 70.26 29.2 69.04 32.2 69.04 36.55 L 69.04 46.19 L 84 46.19 L 82 61.33 L 69 61.33 L 69 100 L 100 100 L 100 0 Z"/>
+    <path id="f" class="facebook-cls-2" d="M69,100V61.33h13l2-15.14H69V36.55c0-4.37,1.22-7.35,7.49-7.35h7.94V15.7a104.57,104.57,0,0,0-11.64-.6c-11.52,0-19.41,7-19.41,19.95V46.19h-13V61.33h13V100Z"/>
+</svg>

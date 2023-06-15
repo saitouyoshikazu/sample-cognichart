@@ -1,0 +1,1 @@
+@include('www.basis.footerlinks')
